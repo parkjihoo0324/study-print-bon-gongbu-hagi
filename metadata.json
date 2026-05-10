@@ -1,0 +1,14 @@
+{
+  "name": "Study Buddy v2",
+  "description": "An all-in-one AI learning companion for students. Scan prints, generate summaries, quizzes, mindmaps, and practice on a digital whiteboard.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "AI-powered OCR",
+    "Smart Summarization",
+    "Quiz Generation",
+    "Visual Mindmaps",
+    "Digital Whiteboard"
+  ]
+}

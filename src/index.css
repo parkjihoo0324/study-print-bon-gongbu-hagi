@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #0f172a;
+  --color-accent: #10b981;
+  --color-app-bg: #f1f5f9;
+  --color-card: #ffffff;
+  --color-border: #e2e8f0;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-800 bg-[#f1f5f9] dark:bg-slate-950 dark:text-slate-200;
+  }
+}
+
+/* Mermaid graph styling overrides */
+.mermaid-container {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mermaid-container svg {
+  width: 100% !important;
+  max-width: 1200px !important;
+  height: auto !important;
+}
+
+.dark .mermaid-container svg {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full dark:bg-slate-800;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400 dark:bg-slate-700;
+}
